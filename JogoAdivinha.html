@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALETHEIA</title>
+   
+    <link rel="stylesheet" type="text/css" href="css.css" />
+</head>
+<body>
+    <div id = "imageminicio">
+
+    </div>
+   
+    <div id = "tela1-container">
+    <h1 id="TituloPrincipal">BEM VINDO A ALETHEIA</h1>
+
+    <div class="wrapGerarNumero">
+        <button id ="gerarNumero" class="gerarNumero">Desativar Bomba</button>>
+      </div>
+    </div>
+
+
+    <div id="jogo" class="oculto">
+        <p>TENTATIVAS RESTANTES: <span id="tentativasRestantes">5</span></p>
+        <input type="number" id="escolha" placeholder="#" min="0" max="100">
+        <button id="enviar">Enviar</button>
+
+
+        <div class="tentativas-container" id="tentativas-container">
+            <div class="tentativa"><span id="palpite1"></span></div>
+            <div class="tentativa"><span id="palpite2"></span></div>
+            <div class="tentativa"><span id="palpite3"></span></div>
+            <div class="tentativa"><span id="palpite4"></span></div>
+            <div class="tentativa"><span id="palpite5"></span></div>
+        </div>
+
+
+        <div class="dicas-conteiner" id="dicas-conteiner">
+         <p class="dica" id="dica1"></p>
+         <p class="dica" id="dica2"></p>
+         <p class="dica" id="dica3"></p>
+         <p class="dica" id="dica4"></p>
+         <p class="dica" id="dica5"></p>
+         </div>
+
+    </div>
+
+    <div class="container-cronometro">
+           
+        <div id="timer">01:00</div>
+    </div>
+
+    
+        <div id="explocao" class="oculto">
+
+            <video id="videoExplosao" >
+                <source src="https://cdn.pixabay.com/video/2018/06/06/16640-274408269_large.mp4" type="video/mp4">
+                
+            </video>
+            
+            <audio id="audioExplosao">
+                <source src="ExplosionMeme.mp3" type="audio/mp3">
+            </audio>
+            
+        </div>
+
+        <h2 id="mensagemFinal"></h2>
+
+        <button id="reiniciar" >Jogar Novamente</button>
+
+        
+    
+
+    
+        <script src = "javaScript.js"> </script>
+</body>
+</html>
+
